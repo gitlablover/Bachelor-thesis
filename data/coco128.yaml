@@ -1,0 +1,6 @@
+path: ../datasets/test  # dataset root dir
+train: images/test010  # train images (relative to 'path') 128 images
+val: images/test010  # val images (relative to 'path') 128 images
+
+nc: 8
+names: ['bear', 'bird', 'cat', 'cow', 'dog', 'elephant', 'horse', 'sheep']

@@ -1,0 +1,68 @@
+<class 'datetime.datetime'> is satisfied= not sure
+<class 'datetime.datetime'> is satisfied= None
+<class 'datetime.datetime'> is satisfied= not sure
+1652305733.6676764 is satisfied= None
+1652305735.4720926 is satisfied= no
+11.05.2022 is satisfied= None
+11.05.2022 is satisfied= not sure
+11.05.2022 235348 is satisfied= None
+11.05.2022 235528 is satisfied= None
+11.05.2022 235553 is satisfied= no
+11.05.2022 235702 is satisfied= None
+12.05.2022 000356 is satisfied= None
+12.05.2022 000434 is satisfied= not sure
+12.05.2022 001452 is satisfied= no
+12.05.2022 00:18:35 is satisfied= no
+12.05.2022 00:21:18 is satisfied= not sure
+12.05.2022 00:21:34 is satisfied= no
+12.05.2022 00:21:45 is satisfied= no
+12.05.2022 00:22:26 is satisfied= yes
+12.05.2022 00:22:31 is satisfied= not sure
+12.05.2022 00:27:41 is satisfied= no
+17.05.2022 23:46:05 is satisfied= yes
+18.05.2022 23:57:41 is satisfied= no
+18.05.2022 23:57:45 is satisfied= yes
+18.05.2022 23:58:06 is satisfied= yes
+19.05.2022 13:15:21 is satisfied= no
+19.05.2022 13:15:30 is satisfied= no
+19.05.2022 13:15:36 is satisfied= no
+19.05.2022 13:15:43 is satisfied= no
+19.05.2022 13:15:43 is satisfied= no
+19.05.2022 13:15:43 is satisfied= no
+19.05.2022 13:15:50 is satisfied= no
+19.05.2022 13:15:54 is satisfied= no
+19.05.2022 13:15:59 is satisfied= no
+19.05.2022 13:15:59 is satisfied= no
+19.05.2022 13:15:59 is satisfied= no
+19.05.2022 13:16:01 is satisfied= no
+19.05.2022 13:16:41 is satisfied= yes
+19.05.2022 13:16:49 is satisfied= yes
+19.05.2022 13:16:49 is satisfied= yes
+19.05.2022 13:16:49 is satisfied= yes
+19.05.2022 13:41:45 is satisfied= not sure
+19.05.2022 13:41:52 is satisfied= not sure
+19.05.2022 13:41:52 is satisfied= not sure
+19.05.2022 13:41:52 is satisfied= not sure
+19.05.2022 13:41:58 is satisfied= not sure
+19.05.2022 13:41:58 is satisfied= not sure
+19.05.2022 13:41:58 is satisfied= not sure
+19.05.2022 13:42:00 is satisfied= not sure
+19.05.2022 13:46:02 is satisfied= yes
+19.05.2022 13:46:10 is satisfied= yes
+19.05.2022 13:46:10 is satisfied= yes
+19.05.2022 13:46:10 is satisfied= yes
+19.05.2022 15:57:05 is satisfied= is satisfied:yes
+19.05.2022 16:02:13is satisfied:not sure
+19.05.2022 16:09:49{"is satisfied":"yes"}
+19.05.2022 16:10:54{"is satisfied":"not sure"}
+19.05.2022 16:12:08{"is satisfied":"not sure"}
+19.05.2022 16:13:05{"is satisfied":"yes"}
+19.05.2022 16:19:48{"is satisfied":"yes"}
+19.05.2022 16:25:40{"is satisfied":"not sure"}
+19.05.2022 16:28:08{"is satisfied":"no"}
+19.05.2022 18:20:12{"is satisfied":"no"}
+19.05.2022 18:58:06{"is satisfied":"yes"}
+19.05.2022 18:59:13{"is satisfied":"not sure"}
+19.05.2022 21:43:00{"is satisfied":"yes"}
+19.05.2022 22:20:15{"is satisfied":"yes"}
+31.05.2022 23:46:51{"is satisfied":"yes"}

@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Detect animal species</title>
+    <link rel="stylesheet" href="../static/bootstrap.css">
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <script>
+        function th_fb() {
+            var choices = document.getElementsByName("is satisfied");
+            var data = "is satisfied:yes";
+            for (i = 0; i < choices.length; i++) {
+                if (choices[i].checked) {
+                    data = "{\"is satisfied\":" + "\"" + choices[i].value + "\"}";
+                    alert("Thanks for your feedback! Any questions? Contact me with emai:hao.yuan@stud.th-luebeck.de!");
+                }
+
+            }
+
+            $.ajax({
+                type: 'post',
+                url: "/log",
+                data: JSON.stringify(data),  //convert to string
+                contentType: 'application/json; charset=UTF-8',
+            })
+        }
+        function showWaiting(){
+        var element=document.getElementById("loading");
+        var form=document.getElementById("detectform");
+        var upload=document.getElementById("uploadimg");
+        if(upload.value == "")
+            alert("Please upload a file before detection!");
+        else {
+            element.style.display = "block";
+            form.submit();
+            }
+        }
+    </script>
+</head>
+<body>
+<div style="text-align: center; margin: 0" class="bg-light">
+    <h1 class="modal-title" style="font-family:HelvLight">Choose your photo</h1>
+    <div class="alert-warning" style="width: 800px; margin: auto"><p class="text-danger">Only bears, cats, dogs, birds, horses, elephants, cows, sheep can be detected! <br>Identification of other species can be misleading! </p></div>
+    <form id="detectform" action="" enctype='multipart/form-data' method='POST'>
+        <input type="file" id="uploadimg" name="file" accept="image/*" style="margin-top:20px;" class="btn-success"/>
+        <input type="button" onclick="showWaiting()" value="detect" class="btn-dark" style="margin-top:15px;"/>
+    </form>
+    <div id="loading" style="display: none"><img src="../static/loading.gif"></div>
+    <div class="card-title"><h2 style="font-family: HelvLight">Original image:</h2></div>
+    <div style="width:800px; height:600px; text-align: center ;margin: auto">
+        <img src="../static/images/origin/org.jpg" alt="Original image not found" style="position: relative; width: auto; height: 100%; max-width: 800px" >
+    </div>
+    <div class="card-title"><h2 style="font-family: HelvLight">Detected image:</h2></div>
+    <div style="width:800px; height:600px;text-align: center; margin: auto">
+        <img src="../static/images/detected/result.jpg" alt="Detected image not found" style="position: relative; height: 100%; width:auto; max-width: 800px">
+    </div>
+    <br>
+    <textarea style="resize:none;border:none; font-family:Georgia,serif" rows="6" cols="100" disabled>{{text}} </textarea>
+</div>
+    <form action="/log" style="border: solid #25cff2; width:400px;margin: auto" id="qorm" name="qform" method="get">
+    <legend>Are you satisfied with the result?</legend>
+    <div>
+      <input type="radio" id="choice1" name="is satisfied" value="yes"
+             checked>
+      <label for=choice1>YES.</label>
+    </div>
+
+    <div>
+      <input type="radio" id="choice2" name="is satisfied" value="no">
+      <label for="choice2">NO.</label>
+    </div>
+
+    <div>
+      <input type="radio" id="choice3" name="is satisfied" value="not sure">
+      <label for="choice3">NOT SURE.</label>
+    </div>
+    <div>
+    <button type="button" onclick="th_fb()">Submit</button>
+    </div>
+    </form>
+
+</body>
+</html>

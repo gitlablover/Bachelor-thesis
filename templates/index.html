@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/html" xmlns="http://www.w3.org/1999/html">
+<head>
+    <meta charset="UTF-8">
+    <title>Detect animal species</title>
+    <link rel="stylesheet" href="../static/bootstrap.css">
+<script>
+function showWaiting(){
+    var upload=document.getElementById("uploadimg");
+    var element=document.getElementById("loading");
+    var form=document.getElementById("detectform");
+    if(upload.value == "")
+        alert("Please upload a file before detection!")
+    else {
+        element.style.display = "block";
+        form.submit();
+    }
+}
+
+</script>
+</head>
+<body>
+
+<div style="text-align: center; margin: 0;" class="bg-light">
+    <h1 class="modal-title" style="font-family: HelvLight;">Choose your photo</h1>
+    <div class="alert-warning" style="width: 800px; margin: auto"><p class="text-danger">Only bears, cats, dogs, birds, horses, elephants, cows, sheep can be detected! <br>Identification of other species can be misleading! </p></div>
+    <form id="detectform" action="" enctype='multipart/form-data' method='POST'>
+        <input type="file" id="uploadimg" name="file" accept="image/*" style="margin-top:20px;" class="btn-success"/>
+        <input type="button" onclick="showWaiting()" value="detect" class="btn-dark " style="margin-top:15px;"><a title="Please upload image file only!">&#160;&#160;❓</a>
+    </form>
+    <div id="loading" style="display: none"><img src="../static/loading.gif" style="height: 700px ;width:auto"></div>
+
+</div>
+
+</body>
+</html>
